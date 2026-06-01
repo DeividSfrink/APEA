@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEA - Asociación Protectora de Animales</title>
+    <style>
+        /* Estilos Globales */
+        :root {
+            --color-principal: #2c7a7b; /* Verde azulado protectora */
+            --color-secundario: #dd6b20; /* Naranja acento */
+            --color-fondo: #f7fafc;
+            --color-texto: #2d3748;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--color-principal);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #234e52;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--color-secundario);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .hero {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-secundario);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Secciones */
+        .seccion {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--color-principal);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Redes Sociales */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .social-btn {
+            padding: 0.75rem 1.5rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .instagram { background-color: #e1306c; }
+        .facebook { background-color: #1877f2; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #2d3748;
+            color: white;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>APEA</h1>
+        <p>Asociación Protectora de Animales de Benaguasil</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#como-ayudar">Cómo Ayudar</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="inicio" class="hero">
+            <h2>¡Bienvenidos a APEA!</h2>
+            <p>Trabajamos día a día para dar una segunda oportunidad a los animales abandonados y maltratados. Nuestro objetivo es cuidarlos, rehabilitarlos y encontrarles el hogar responsable que tanto se merecen.</p>
+            <a href="#contacto" class="btn">¡Adopta o Colabora!</a>
+        </section>
+
+        <section id="sobre-nosotros" class="seccion">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una asociación sin ánimo de lucro ubicada en Benaguasil. Nuestro motor es el amor por los animales y la lucha contra el abandono. En esta web compartiremos muy pronto los casos de los peludos que buscan familia, historias de éxito y campañas de concienciación.</p>
+        </section>
+
+        <section id="como-ayudar" class="seccion">
+            <h2>Cómo Ayudar</h2>
+            <p>No todo es adoptar; hay muchas formas en las que puedes arrimar el hombro para ayudarnos a mantener el refugio:</p>
+            <ul>
+                <li><strong>Adopción:</strong> Dales un hogar definitivo.</li>
+                <li><strong>Acogida temporal:</strong> Sé su puente hacia una nueva vida.</li>
+                <li><strong>Voluntariado:</strong> Ayúdanos en las tareas del refugio, paseos o eventos.</li>
+                <li><strong>Donaciones:</strong> Alimentos, mantas, material de limpieza o aportaciones económicas para gastos veterinarios.</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="seccion" style="text-align: center;">
+            <h2>Síguenos y Contacta con Nosotros</h2>
+            <p>Para ver los animales disponibles en adopción y enterarte de nuestras últimas novedades en tiempo real, visítanos en nuestras redes sociales:</p>
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/apea_asociacion/?hl=en" target="_blank" class="social-btn instagram">Síguenos en Instagram</a>
+                <a href="https://www.facebook.com/people/Apea-Benaguasil/100077910100070/#" target="_blank" class="social-btn facebook">Síguenos en Facebook</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 APEA Asociación Protectora de Animales. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
